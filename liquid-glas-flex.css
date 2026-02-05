@@ -20,7 +20,7 @@
 
     /* depth */
     box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 20px 40px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -101,4 +101,24 @@
 .button-alt:focus {
     background: var(--accent-dark);
     outline: none;
+}
+
+.liquid-glas-flex-dark {
+    border-radius: 8px;
+
+    /* glass base */
+    background: linear-gradient(180deg,
+            rgba(20, 20, 20, 0.062),
+            rgba(20, 20, 20, 0.02));
+
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+
+    /* subtle border */
+    border: 1px solid rgba(143, 143, 143, 0.35);
+
+    /* depth */
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.25);
+
 }
