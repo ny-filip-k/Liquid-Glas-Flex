@@ -1,16 +1,18 @@
 :root {
     --accent: #0f7bff;
     --accent-dark: #083770;
+    --disabled: grey;
 }
-
 
 .liquid-glas-flex {
     border-radius: 8px;
 
     /* glass base */
-    background: linear-gradient(180deg,
-            rgba(255, 255, 255, 0.062),
-            rgba(255, 255, 255, 0.02));
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.062),
+        rgba(255, 255, 255, 0.02)
+    );
 
     backdrop-filter: blur(10px) saturate(160%);
     -webkit-backdrop-filter: blur(10px) saturate(160%);
@@ -19,31 +21,36 @@
     border: 1px solid rgba(143, 143, 143, 0.35);
 
     /* depth */
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.25);
-
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .bodyflex {
     margin: 0;
     min-height: 100vh;
-    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial;
     color: var(--text);
     background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
-
 .liquid-button {
     border-radius: 8px;
     padding: 8px 14px;
 
     /* glass base */
-    background: linear-gradient(180deg,
-            rgba(255, 255, 255, 0.062),
-            rgba(255, 255, 255, 0.02));
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.062),
+        rgba(255, 255, 255, 0.02)
+    );
 
     backdrop-filter: blur(10px) saturate(160%);
     -webkit-backdrop-filter: blur(10px) saturate(160%);
@@ -52,30 +59,34 @@
     border: 1px solid rgba(143, 143, 143, 0.35);
 
     /* depth */
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 
     color: white;
-
 }
 
 .liquid-button:hover {
-    background: linear-gradient(100deg,
-            rgba(255, 255, 255, 0.062),
-            rgba(255, 255, 255, 0.02));
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.062),
+        rgba(255, 255, 255, 0.02)
+    );
 }
 
 .liquid-button:active {
-    background: linear-gradient(100deg,
-            rgba(255, 255, 255, 0.062),
-            rgba(255, 255, 255, 0.02));
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.062),
+        rgba(255, 255, 255, 0.02)
+    );
     scale: 0.95;
 }
 
 .liquid-button:focus {
-    background: linear-gradient(100deg,
-            rgba(255, 255, 255, 0.062),
-            rgba(255, 255, 255, 0.02));
+    background: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.062),
+        rgba(255, 255, 255, 0.02)
+    );
     outline: none;
 }
 
@@ -83,6 +94,16 @@
     padding: 8px 14px;
     border-radius: 8px;
     background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+}
+
+.button-alt_Disabled {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: var(--disabled);
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -107,9 +128,11 @@
     border-radius: 8px;
 
     /* glass base */
-    background: linear-gradient(180deg,
-            rgba(20, 20, 20, 0.062),
-            rgba(20, 20, 20, 0.02));
+    background: linear-gradient(
+        180deg,
+        rgba(20, 20, 20, 0.062),
+        rgba(20, 20, 20, 0.02)
+    );
 
     backdrop-filter: blur(10px) saturate(160%);
     -webkit-backdrop-filter: blur(10px) saturate(160%);
@@ -118,9 +141,7 @@
     border: 1px solid rgba(143, 143, 143, 0.35);
 
     /* depth */
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.25);
-
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .btn {
@@ -129,10 +150,19 @@
     background: var(--accent);
     color: white;
     text-decoration: none;
-    font-weight: 600
+    font-weight: 600;
+}
+
+.btnDisabled {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: var(--disabled);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .small {
     font-size: 13px;
-    color: var(--muted)
+    color: var(--muted);
 }
